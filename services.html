@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulaHealth - Our Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        
+        <div class="auth-bar">
+            <button onclick="location.href='signup.html'">Sign Up</button>
+            <button onclick="location.href='signin.html'">Sign in</button>
+        </div>
+        <h1>PulaHealth Medical Services</h1>
+        
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" class="active">Services</a></li>
+                <li><a href="doctorsdirectory.html">Doctors Directory</a></li>
+                <li><a href="bookappointment.html">Book Appointment</a></li>
+                <li><a href="myappointments.html">My Appointments</a></li>
+                <li><a href="videoconsultation.html">Video Consultation</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="Services-container">
+        <h2>Our Services</h2>
+        <table class="services-table">
+            <thead>
+                <tr>
+                    <th>Service Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Consultation</td>
+                    <td>Basic Health Check</td>
+                    <td>P100.00</td>
+                    <td><button class="book-btn" onclick="bookAppointment('Consultation')">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Executive Health Package</td>
+                    <td>Full day comprehensive health assessment</td>
+                    <td>P499.00</td>
+                    <td><button class="book-btn" onclick="bookAppointment('Executive Health Package')">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Basic Health Check</td>
+                    <td>Comprehensive blood tests and physical examination</td>
+                    <td>P1000.00</td>
+                    <td><button class="book-btn" onclick="bookAppointment('Basic Health Check')">Book Now</button></td>
+                </tr>
+                <tr>
+                    <td>Advanced Screening</td>
+                    <td>Includes CT Scans and ultrasound scans</td>
+                    <td>P2500.00</td>
+                    <td><button class="book-btn" onclick="bookAppointment('Advanced Screening')">Book Now</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Doctor Booking Botswana. All rights reserved.</p>
+    </footer>
+
+    <script src="services.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors Directory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="auth-bar">
+            <button onclick="location.href='signup.html'">Sign Up</button>
+            <button onclick="location.href='signin.html'">Sign in</button>
+        </div>
+
+        <div class="container">
+            <h1>PulaHealth Doctors Directory</h1>
+        </div>
+
+        <nav id="mainNav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctorsdirectory.html" class="active">Doctors Directory</a></li>
+                <li><a href="bookappointment.html">Book Appointment</a></li>
+                <li><a href="myappointments.html">My Appointments</a></li>
+                <li><a href="videoconsultation.html">Video Consultation</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-section">
+            <div class="container">
+                <h2>Filter by Specialty</h2>
+                <select id="specialtyFilter">
+                    <option value="all">All Specialties</option>
+                    <option value="cardiology">Cardiology</option>
+                    <option value="neurology">Neurology</option>
+                    <option value="pediatrics">Pediatrics</option>
+                    <option value="orthopedics">Orthopedics</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="doctors-section">
+            <div class="container">
+                <h2>Available Doctors</h2>
+
+                <div class="doctor-profile doctor-card">
+                    <img src="assests/images/ASA.jpg" alt="Dr. Asanta Monamo" class="doctor-photo">
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Asanta Monamo</h3>
+                        <p class="doctor-specialty">Neurology</p>
+                        <p>Availability: Mon, Wed, Fri</p>
+                    </div>
+                </div>
+
+                <div class="doctor-profile doctor-card">
+                    <img src="assests/images/carol.webp" alt="Dr. Carol Mona" class="doctor-photo">
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Carol Mona</h3>
+                        <p class="doctor-specialty">Cardiology</p>
+                        <p>Availability: Tue, Thu</p>
+                    </div>
+                </div>
+
+                <div class="doctor-profile doctor-card">
+                    <img src="assests/images/debbie.jpg" alt="Dr. Debbie Amantle" class="doctor-photo">
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Debbie Amantle</h3>
+                        <p class="doctor-specialty">Pediatrics</p>
+                        <p>Availability: Mon, Tue, Thu</p>
+                    </div>
+                </div>
+
+                <div class="doctor-profile doctor-card">
+                    <img src="assests/images/dr kevin.png" alt="Dr. Itumeleng Kevin" class="doctor-photo">
+                    <div class="doctor-info">
+                        <h3 class="doctor-name">Dr. Itumeleng Kevin</h3>
+                        <p class="doctor-specialty">Orthopedics</p>
+                        <p>Availability: Tue, Thu</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Doctors Directory. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="doctorsdirectory.js"></script>
+
+</body>
+</html>

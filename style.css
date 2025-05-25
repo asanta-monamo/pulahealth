@@ -1,0 +1,516 @@
+:root {
+  --blue: #007bff;
+  --dark-blue: #034386;
+  --hover-blue: #0360b2;
+  --green: #28a745;
+  --hover-green: #218838;
+  --light-bg: #f9f9f9;
+  --text-color: #333;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Inter', Arial, sans-serif;
+  background: var(--light-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header,
+footer,
+.main-header {
+  background-color: rgba(0, 123, 255, 0.8);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-header {
+  position: relative;
+}
+
+.main-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.welcome-text {
+  margin-top: 10px;
+  font-size: 1.1rem;
+}
+
+.auth-bar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.auth-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  background-color: white;
+  color: var(--dark-blue);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-bar button:hover {
+  background-color: #e6e6e6;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+nav a.active {
+  background-color: white;
+  color: var(--dark-blue);
+}
+
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: linear-gradient(to bottom right, #e0f7ff, #ffffff);
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.cta-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: var(--hover-blue);
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem 1rem;
+}
+
+.feature-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.feature-box h3 {
+  color: #003366;
+  margin-top: 10px;
+}
+
+.feature-box p {
+  font-size: 0.95rem;
+}
+
+.icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+button,
+.book-btn,
+#feedback-form button[type="submit"],
+#inquiry-form button {
+  background-color: var(--dark-blue);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+.book-btn:hover,
+#feedback-form button[type="submit"]:hover,
+#inquiry-form button:hover {
+  background-color: var(--hover-blue);
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="date"],
+input[type="email"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 5px 0 15px 0;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label,
+#inquiry-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.services-container,
+.feedback-container,
+.contact-container,
+.dashboard,
+.appointments {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.services-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.services-table th,
+.services-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.services-table th {
+  background-color: var(--blue);
+  color: white;
+}
+
+.services-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+.contact-methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact-method {
+  flex: 1 1 45%;
+  background-color: var(--light-bg);
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.05);
+}
+
+.contact-method h3 {
+  color: var(--dark-blue);
+  margin-bottom: 10px;
+}
+
+#inquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.feedback-container h2,
+.contact-container h2 {
+  color: var(--dark-blue);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.doctor-profile {
+  display: flex;
+  align-items: center;
+  background: white;
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.doctor-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.doctor-info h3 {
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.doctor-info p {
+  margin: 5px 0;
+}
+
+.appointment-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-left: 6px solid #ccc;
+  background: #fdfdfd;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.appointment-card.confirmed {
+  border-color: var(--blue);
+}
+
+.appointment-card.pending {
+  border-color: #f4a261;
+}
+
+.actions button {
+  margin: 5px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cancel-btn {
+  background-color: #e63946;
+  color: white;
+}
+
+.reschedule-btn {
+  background-color: #264653;
+  color: white;
+}
+
+#video-consultation-info {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+#video-container {
+  display: none;
+  margin-top: 20px;
+}
+
+#how-it-works {
+  background-color: var(--light-bg);
+  padding: 30px 20px;
+  margin: 40px 20px;
+  border-radius: 10px;
+}
+
+#how-it-works h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#how-it-works ol {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+#how-it-works li {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+#how-it-works a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+#how-it-works a:hover {
+  text-decoration: underline;
+}
+
+#startConsultation {
+  background-color: var(--blue);
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#startConsultation:hover {
+  background-color: #0056b3;
+}
+
+.info-box {
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 25px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.info-box h2 {
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+
+.info-box p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.social-link {
+  color: var(--blue);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.social-link:hover {
+  text-decoration: underline;
+  color: var(--hover-blue);
+}
+
+.footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: rgba(0, 123, 255, 0.8);
+  font-size: 0.9rem;
+}
+
+
+@media (max-width: 600px) {
+  .banner {
+    height: 200px;
+    font-size: 1.5em;
+  }
+
+  .feedback-container {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services-table {
+    display: block;
+    overflow-x: auto;
+  }
+
+  .contacts-grid,
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-method {
+    flex: 1 1 100%;
+  }
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  padding: 2em;
+  justify-content: space-between;
+}
+
+.contact-info,
+.contact-form-container {
+  flex: 1 1 45%;
+  background-color: #f5f5f5;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-info h2,
+.contact-form-container h2 {
+  margin-top: 0;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 1em;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.25em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #0a58ca;
+}
+
+

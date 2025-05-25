@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - PulaHealth</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+    <div class="auth-bar">
+        <span id="auth-buttons"></span>
+    </div>
+
+    <h1>PulaHealth Booking Appointment</h1>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="doctorsdirectory.html">Doctors Directory</a></li>
+            <li><a href="bookappointment.html" class="active">Book Appointment</a></li>
+            <li><a href="myappointments.html">My Appointments</a></li>
+            <li><a href="videoconsultation.html">Video Consultation</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="appointment-form">
+    <h2>Schedule Your Appointment</h2>
+    <form id="booking-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="doctor">Choose a Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="dr1">Dr. Asanta Monamo</option>
+            <option value="dr2">Dr. Itumeleng Mopipi</option>
+            <option value="dr3">Dr. Debbie Amantle</option>
+            <option value="dr4">Dr. Carol Mona</option>
+        </select>
+
+        <label for="date">Appointment Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <button type="submit">Book Appointment</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2025 Doctor Booking Botswana. All rights reserved.</p>
+</footer>
+
+<script src="bookappointment.js"></script>
+
+</body>
+</html>
